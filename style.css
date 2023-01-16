@@ -1,0 +1,13 @@
+
+.main-container{
+    width: 30%;
+    background-color: rgb(241, 241, 241);
+    padding: 40px;
+    margin-top: 50px;
+}
+button{
+    width: 100%;
+}
+.form-container{
+    width: 100%;
+}
