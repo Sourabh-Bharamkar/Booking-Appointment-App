@@ -3,7 +3,7 @@ let form = document.getElementById('form')
 
 let registeredUsers = document.getElementById('registeredUsers')
 
-//transferring data to CrudCrud
+//Sending data to CrudCrud
 form.addEventListener('submit', storeDetails)
 
 
@@ -36,8 +36,10 @@ function storeDetails(e) {
 
 }
 
-//add eventlistner on page reload
-window.onload = function pageReload(e) {
+//add event listener to DOMContentLoaded
+window.addEventListener('DOMContentLoaded', getAllDataFromCrudCrd)
+
+function getAllDataFromCrudCrd(e) {
   e.preventDefault();
   axios.get('https://crudcrud.com/api/b2570059467c4c8d88b916e418485911/appointmentData')
     .then((response) => {
